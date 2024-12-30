@@ -43,13 +43,6 @@ vim.opt.smartindent = true
 -- fix for full-width characters overlapping with half-width characters
 vim.opt.ambiwidth = "double"
 
--- always open nvim-tree
-local function open_nvim_tree()
-    require("nvim-tree.api").tree.open()
-end
-
-vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
-
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
