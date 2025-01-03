@@ -7,7 +7,10 @@ return {
       "MunifTanjim/nui.nvim",
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     },
-    config = function()
+    keys = {
+      { "<C-n>", ":Neotree filesystem reveal left<CR>", desc = "Toggle NeoTree" },
+    },
+   config = function()
       require("neo-tree").setup({
         window = {
           width = 30,
@@ -22,7 +25,6 @@ return {
           },
         },
       })
-      vim.cmd([[Neotree show]])
     end,
 }
 
