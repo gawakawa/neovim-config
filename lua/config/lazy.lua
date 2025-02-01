@@ -43,6 +43,9 @@ vim.opt.smartindent = true
 -- fix for full-width characters overlapping with half-width characters
 vim.opt.ambiwidth = "double"
 
+-- font
+vim.opt.guifont = "FiraCode Nerd Font:h15"
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
